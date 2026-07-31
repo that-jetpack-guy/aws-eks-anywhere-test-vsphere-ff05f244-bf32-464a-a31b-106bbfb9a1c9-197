@@ -2,7 +2,6 @@ apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: Cluster
 metadata:
   annotations:
-    anywhere.eks.amazonaws.com/managed-by-cli: "true"
     anywhere.eks.amazonaws.com/management-components-version: v0.26.1-dev+build.1
   name: release-i-05a70-12b5075
   namespace: default
@@ -37,7 +36,7 @@ spec:
   gitOpsRef:
     kind: FluxConfig
     name: eksa-test
-  kubernetesVersion: "1.35"
+  kubernetesVersion: "1.36"
   licenseToken: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlSWQiOiJsLWYyYjg4OWZlYTIxMDQ1MzE4ZmZiNmQ2MTcxYzNhOWRhIiwibGljZW5zZVZlcnNpb24iOiIxIiwiYmVnaW5WYWxpZGl0eSI6IjIwMjQtMTAtMjRUMTk6Mjg6MDkuMDAwWiIsImVuZFZhbGlkaXR5IjoiMjAyNy0xMC0yNVQxOToyODowOS4wMDBaIiwic3Vic2NyaXB0aW9uSWQiOiJlNjcxNTUyMi03NWIzLTQ2MDktOGMxYS0wZjJkNjQ0OTgxOGM6N2I1ZjliYWMiLCJzdWJzY3JpcHRpb25OYW1lIjoiaXRpbmZyYS1tcGstcnRwLXByb2QiLCJhY2NvdW50SWQiOiI4ODEwMzk3MDg2ODEiLCJyZWdpb24iOiJ1cy13ZXN0LTIifQ.VZFaGjcR7gzvgtrbueOghQnezqvf-ZFHzxh-A5LSUlGwSjZC1EGUsVzjfCCmt_uhydAelsciYvu3kQJzXL75xA
   machineHealthCheck:
     maxUnhealthy: 100%
@@ -86,7 +85,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-35-eks-12-ubuntu-2204
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-36-eks-6-ubuntu-2204
   users:
   - name: ec2-user
     sshAuthorizedKeys:
@@ -108,7 +107,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-35-eks-12-ubuntu-2204
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-36-eks-6-ubuntu-2204
   users:
   - name: ec2-user
     sshAuthorizedKeys:
@@ -132,7 +131,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-35-eks-12-ubuntu-2204
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-36-eks-6-ubuntu-2204
   users:
   - name: ec2-user
     sshAuthorizedKeys:
